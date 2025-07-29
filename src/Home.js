@@ -6,9 +6,9 @@ import Navbar from './components/navbar';
 
 export const HomePage = () => {
     return (
-        <div className="flex min-h-screen bg-gray-100">
+        <div className="flex h-screen overflow-hidden font-inter bg-gray-100">
         <Sidebar />
-        <div className="flex-1 flex flex-col">
+        <div className="flex flex-col flex-1 min-w-0">
           <Navbar />
           <main className=" flex p-6">
           <OverviewBar />

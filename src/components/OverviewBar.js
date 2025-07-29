@@ -1,19 +1,25 @@
-import React from "react";
+import { LayoutDashboard, Layers, FileText, PenLine } from "lucide-react";
 
-export default function OverviewBar() {
+export default function VerticalMenu() {
   return (
-    <div className="flex px-6 pt-4 gap-6">
-      {/* Vertical Menu */}
-      <div className="flex flex-col space-y-4 text-sm text-gray-600 min-w-[150px]">
-        <button className="text-black font-medium  pl-2">Overview</button>
-        <button className="hover:text-black pl-2">Templates</button>
-        <button className="hover:text-black pl-2">Documents</button>
-        <button className="bg-black text-white text-sm px-4 py-2 rounded hover:bg-gray-800">
-          Sign
-        </button>
-      </div>
+    <div className="flex flex-col gap-3 px-6 pt-4 text-sm text-gray-600 min-w-[160px]">
+      <button className="flex items-center gap-2 text-black font-medium">
+         Overview
+      </button>
 
-      
+      <button className="flex items-center gap-2 hover:text-black">
+        Templates
+      </button>
+
+      <button className="flex items-center gap-2 hover:text-black">
+      Documents
+      </button>
+<div>
+<button className="mt-2 bg-black text-white px-3 py-1 rounded hover:bg-gray-800 flex items-center gap-1">
+        <PenLine size={16} /> Sign
+      </button>
+</div>
+    
     </div>
   );
 }
